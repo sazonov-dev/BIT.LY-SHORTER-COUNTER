@@ -54,7 +54,7 @@ def main():
   try:
     if is_bitlink(bitly_token, args.link):
           bitly_url_clicks = count_clicks(bitly_token, args.link)
-          print(f'По ссылке {user_url}, общее кол-во кликов {bitly_url_clicks}')
+          print(f'По ссылке {args.link}, общее кол-во кликов {bitly_url_clicks}')
     else:
       short_bitly_url = shorten_link(bitly_token, args.link)
       print(f'Битлинк - {short_bitly_url}')
