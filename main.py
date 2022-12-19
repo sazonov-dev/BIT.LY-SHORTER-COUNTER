@@ -1,9 +1,11 @@
-import requests
-from urllib.parse import urlparse
 import argparse
-from dotenv import load_dotenv
 import logging
 import os
+from urllib.parse import urlparse
+
+import requests
+from dotenv import load_dotenv
+
 
 def is_bitlink(token, url):
   headers = {
